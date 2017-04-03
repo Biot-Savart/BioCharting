@@ -19,6 +19,9 @@
 	<div id="pieChartDiv"></div>
     <div id="donutChartDiv"></div>
 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
   	<script src="js/d3//d3.js"></script>
   	<script src="js/bioCharts/pie.js"></script>
   	<script src="js/bioCharts/donut.js"></script>
@@ -30,10 +33,10 @@
       $(document).ready(function () {  
 
        //Load the json data
-        $.getJSON( "https://raw.githubusercontent.com/Biot-Savart/SearchBar/develop/data.json", function( data ) {
+        $.getJSON( "https://raw.githubusercontent.com/Biot-Savart/BioCharting/develop/MOCK_DATA.json", function( data ) {
       
-            drawPie(data, '#pieChartDiv',450,450);
-    		drawDonut(data, '#donutChartDiv');
+            addPie(data, '#pieChartDiv',450,450);
+    		addDonut(data, '#donutChartDiv');
            
           });
     });

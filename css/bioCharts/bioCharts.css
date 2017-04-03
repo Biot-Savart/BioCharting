@@ -1,0 +1,52 @@
+﻿.legend {
+    font-size: 12px;
+}
+
+rect {
+    cursor: pointer;
+    stroke-width: 2;
+}
+
+    rect.disabled {
+        fill: transparent !important;
+    }
+
+#pieChartDiv {
+    height: 450px;
+    position: relative;
+    width: 440px;
+    margin: 0 auto;
+}
+
+#donutChartDiv {
+    height: 360px;
+    position: relative;
+    width: 360px;
+    margin: 0 auto;
+}
+
+
+.chartTooltip {
+    background: #eee;
+    box-shadow: 0 0 5px #999999;
+    color: #333;
+    display: none;
+    font-size: 12px;
+    left: 130px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 95px;
+    width: 150px;
+    z-index: 10;
+    opacity: 1;
+}
+
+.chartTooltip .label {
+    color: black;
+    font-size: 100%;
+}
+
+path:hover {
+    opacity: 0.8;
+}

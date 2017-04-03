@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Charting library using d3js">
+    <meta name="author" content="Ryno Myburgh">    
+
+    <title>BioCharts</title>
+
+	<link href="css/bioCharts/bioCharts.css" rel="stylesheet">
+
+ </head>
+
+  	<body>
+
+	<div id="pieChartDiv"></div>
+    <div id="donutChartDiv"></div>
+
+  	<script src="js/d3//d3.js"></script>
+  	<script src="js/bioCharts/pie.js"></script>
+  	<script src="js/bioCharts/donut.js"></script>
+   </body>
+</html>
+
+
+<script type="text/javascript">
+      $(document).ready(function () {  
+
+       //Load the json data
+        $.getJSON( "https://raw.githubusercontent.com/Biot-Savart/SearchBar/develop/data.json", function( data ) {
+      
+            drawPie(data, '#pieChartDiv',450,450);
+    		drawDonut(data, '#donutChartDiv');
+           
+          });
+    });
+</script>

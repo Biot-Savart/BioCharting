@@ -3,7 +3,9 @@ Easy to use charting library using 3djs
 
 ## Available Charts
 > - Pie
+	![Pie Chart](https://github.com/Biot-Savart/BioCharting/blob/develop/images/pie.PNG?raw=true)
 > - Donut
+	![Donut Chart](https://github.com/Biot-Savart/BioCharting/blob/develop/images/donut.PNG?raw=true)
 
 ## Implementation
 ```javascript
@@ -13,5 +15,5 @@ Easy to use charting library using 3djs
     		addDonut(data, '#donutChartDiv');
            
           });
-'''
+```
 

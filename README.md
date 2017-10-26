@@ -1,5 +1,5 @@
 # BioCharting
-Easy to use animated charting library using 3djs
+Easy to use animated charting library using D3js
 
 ## Available Charts
 ### Pie

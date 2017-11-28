@@ -1,6 +1,8 @@
 # BioCharting
 Easy to use animated charting library using D3js
 
+A sample page can be accessed here: https://biot-savart.github.io/BioCharting/index.html
+
 ## Available Charts
 ### Pie
 
